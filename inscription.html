@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Inscrivez-vous à l'Auto-École HUMILITE à Koumassi, Abidjan. Formulaire d'inscription en ligne." />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>S'inscrire | Auto-École HUMILITE</title>
+  </head>
+  <body>
+
+    <a href="https://wa.me/2250713188565" class="whatsapp__float" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+      <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <header class="page__header">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html">HUMILITE</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="inscription.html" class="active">S'inscrire</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__btn">
+          <a href="inscription.html"><button class="btn">S'inscrire</button></a>
+        </div>
+      </nav>
+
+      <div class="page__hero">
+        <h1>INSCRIPTION EN LIGNE</h1>
+        <p>Remplissez le formulaire ci-dessous et nous vous recontactons sous 24h.</p>
+        <div class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>S'inscrire</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section Inscription -->
+    <section class="section__container inscription__container">
+      <div class="inscription__layout">
+
+        <!-- Formulaire -->
+        <div class="inscription__form__wrap">
+          <h2 class="section__header" style="font-size: 2rem; letter-spacing: -3px; margin-bottom: 2rem;">VOTRE DEMANDE D'INSCRIPTION</h2>
+
+          <form class="inscription__form" id="inscriptionForm" onsubmit="handleSubmit(event)">
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="prenom">Prénom <span class="required">*</span></label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+              </div>
+              <div class="form__group">
+                <label for="nom">Nom de famille <span class="required">*</span></label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="telephone">Téléphone <span class="required">*</span></label>
+                <input type="tel" id="telephone" name="telephone" placeholder="+225 07 00 00 00 00" required />
+              </div>
+              <div class="form__group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="exemple@email.com" />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="age">Âge <span class="required">*</span></label>
+                <input type="number" id="age" name="age" placeholder="Votre âge" min="16" max="80" required />
+              </div>
+              <div class="form__group">
+                <label for="commune">Commune de résidence</label>
+                <input type="text" id="commune" name="commune" placeholder="Ex: Koumassi, Marcory..." />
+              </div>
+            </div>
+
+            <div class="form__group form__group--full">
+              <label for="categorie">Catégorie souhaitée <span class="required">*</span></label>
+              <select id="categorie" name="categorie" required onchange="updateForfaits()">
+                <option value="">-- Sélectionnez une catégorie --</option>
+                <option value="b">Catégorie B — Voiture particulière</option>
+                <option value="a">Catégorie A — Moto</option>
+                <option value="c">Catégorie C — Poids lourds</option>
+                <option value="code">Code de la route uniquement</option>
+              </select>
+            </div>
+
+            <div class="form__group form__group--full">
+              <label for="forfait">Forfait souhaité <span class="required">*</span></label>
+              <select id="forfait" name="forfait" required>
+                <option value="">-- Sélectionnez d'abord une catégorie --</option>
+              </select>
+            </div>
+
+            <div class="form__group form__group--full">
+              <label for="debut">Date de début souhaitée</label>
+              <input type="date" id="debut" name="debut" />
+            </div>
+
+            <div class="form__group form__group--full">
+              <label for="message">Message ou question (optionnel)</label>
+              <textarea id="message" name="message" placeholder="Posez vos questions ici..." rows="4"></textarea>
+            </div>
+
+            <div class="form__group form__group--full">
+              <label class="checkbox__label">
+                <input type="checkbox" required />
+                <span>J'accepte d'être recontacté(e) par Auto-École HUMILITE pour ma demande d'inscription.</span>
+              </label>
+            </div>
+
+            <div class="form__actions">
+              <button type="submit" class="btn btn--full">
+                <i class="ri-send-plane-line"></i> Envoyer ma demande
+              </button>
+              <a href="https://wa.me/2250713188565?text=Bonjour%2C%20je%20souhaite%20m%27inscrire%20%C3%A0%20l%27auto-%C3%A9cole%20HUMILITE." target="_blank" class="btn btn--wa btn--full">
+                <i class="ri-whatsapp-line"></i> Ou écrire sur WhatsApp
+              </a>
+            </div>
+
+            <div class="form__success" id="successMsg" style="display:none;">
+              <i class="ri-checkbox-circle-line"></i>
+              <strong>Demande envoyée !</strong>
+              <p>Nous vous recontactons dans les 24h. En attendant, vous pouvez nous joindre sur WhatsApp.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Sidebar info -->
+        <div class="inscription__sidebar">
+          <div class="sidebar__card">
+            <div class="sidebar__icon"><i class="ri-information-line"></i></div>
+            <h3>Documents requis</h3>
+            <ul>
+              <li><i class="ri-file-user-line"></i> CNI ou passeport (copie)</li>
+              <li><i class="ri-camera-line"></i> 2 photos d'identité</li>
+              <li><i class="ri-heart-pulse-line"></i> Certificat médical</li>
+              <li><i class="ri-money-dollar-circle-line"></i> Frais d'inscription</li>
+            </ul>
+          </div>
+
+          <div class="sidebar__card sidebar__card--highlight">
+            <div class="sidebar__icon"><i class="ri-map-pin-line"></i></div>
+            <h3>Nous trouver</h3>
+            <p><strong>Prodomo 1, Koumassi</strong><br />Abidjan, Côte d'Ivoire</p>
+            <p><strong>Horaires :</strong><br />Lun – Sam : 7h00 – 18h00</p>
+            <a href="contact.html" class="sidebar__link"><i class="ri-map-2-line"></i> Voir la carte</a>
+          </div>
+
+          <div class="sidebar__card">
+            <div class="sidebar__icon"><i class="ri-phone-line"></i></div>
+            <h3>Contact direct</h3>
+            <p>Besoin d'un renseignement rapide ? Appelez ou écrivez nous :</p>
+            <a href="https://wa.me/2250713188565" class="sidebar__whatsapp" target="_blank">
+              <i class="ri-whatsapp-line"></i> +225 07 13 18 85 65
+            </a>
+          </div>
+
+          <div class="sidebar__card sidebar__reviews">
+            <div class="stars__row">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            </div>
+            <p>"La meilleure auto-école de Koumassi. Permis obtenu en 38 jours !"</p>
+            <span>— Koné Aminata, Mars 2025</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h4>Auto-École HUMILITE</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formations.html">Nos formations</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Formations</h4>
+          <ul class="footer__links">
+            <li><a href="formations.html">Catégorie B</a></li>
+            <li><a href="formations.html">Catégorie A</a></li>
+            <li><a href="formations.html">Catégorie C</a></li>
+            <li><a href="formations.html">Code seul</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Informations</h4>
+          <ul class="footer__links">
+            <li><a href="#">Prodomo 1, Koumassi</a></li>
+            <li><a href="https://wa.me/2250713188565">+225 07 13 18 85 65</a></li>
+            <li><a href="#">Lun–Sam: 7h – 18h</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Suivez-nous</h4>
+          <ul class="footer__socials">
+            <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="https://wa.me/2250713188565"><i class="ri-whatsapp-line"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright &copy; 2025 Auto-École HUMILITE — Koumassi, Abidjan.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script>
+      const forfaitsData = {
+        b: [
+          { value: 'b-essentiel', label: 'Essentiel — Code + 20h conduite (75 000 FCFA)' },
+          { value: 'b-premium', label: 'Premium — Code + 30h + Examen (110 000 FCFA)' },
+        ],
+        a: [
+          { value: 'a-complet', label: 'Moto Complet — Code + 15h + Examen (55 000 FCFA)' },
+        ],
+        c: [
+          { value: 'c-pro', label: 'Professionnel C — Code + 35h + Examen (180 000 FCFA)' },
+        ],
+        code: [
+          { value: 'code-seul', label: 'Code seul — 2 tentatives incluses (25 000 FCFA)' },
+        ],
+      };
+
+      function updateForfaits() {
+        const cat = document.getElementById('categorie').value;
+        const sel = document.getElementById('forfait');
+        sel.innerHTML = '<option value="">-- Sélectionnez un forfait --</option>';
+        if (cat && forfaitsData[cat]) {
+          forfaitsData[cat].forEach(f => {
+            const opt = document.createElement('option');
+            opt.value = f.value;
+            opt.textContent = f.label;
+            sel.appendChild(opt);
+          });
+        }
+      }
+
+      function handleSubmit(e) {
+        e.preventDefault();
+        const form = document.getElementById('inscriptionForm');
+        const success = document.getElementById('successMsg');
+        form.querySelectorAll('input, select, textarea, button').forEach(el => el.disabled = true);
+        success.style.display = 'flex';
+        success.scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
+  </body>
+</html>

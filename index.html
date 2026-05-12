@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Auto-Ã‰cole HUMILITE Ã  Koumassi, Abidjan. Obtenez votre permis de conduire en 1 mois et 10 jours. Note 5/5 par nos Ã©lÃ¨ves. Formations code et conduite." />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css?v=2" />
+    <title>Auto-école HUMILITE - Koumassi, Abidjan</title>
+  </head>
+  <body>
+
+    <!-- WhatsApp Float Button -->
+    <!-- <a href="https://wa.me/2250713188565" class="whatsapp__float" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+      <i class="ri-whatsapp-line"></i>
+    </a> -->
+
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html">HUMILITE</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="inscription.html">S'inscrire</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__btn">
+          <a href="inscription.html"><button class="btn">S'inscrire</button></a>
+        </div>
+      </nav>
+
+      <div class="header__container" id="home">
+        <!-- <div class="header__badge">
+          <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          <span>Note 5/5 â€¢ Koumassi, Abidjan</span>
+        </div> -->
+        <h1>PERMIS EN 1 MOIS ET 10 JOURS</h1>
+        <form action="inscription.html" method="get">
+          <div class="input__group">
+            <label for="formation">Type de formation</label>
+            <select name="formation" id="formation">
+              <option value="">Code + Conduite</option>
+              <option value="code">Code uniquement</option>
+              <option value="conduite">Conduite uniquement</option>
+            </select>
+          </div>
+          <div class="input__group">
+            <label for="categorie">Catégorie</label>
+            <select name="categorie" id="categorie">
+              <option value="">Catégorie B (Voiture)</option>
+              <option value="a">Catégorie A (Moto)</option>
+              <option value="c">Catégorie C (Camion)</option>
+            </select>
+          </div>
+          <div class="input__group">
+            <label for="debut">Début souhaité</label>
+            <input type="text" name="debut" id="debut" placeholder="Dès maintenant" />
+          </div>
+          <button class="btn" type="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <div class="header__illustration">
+          <div class="hero__visual">
+            <div class="hero__photo">
+              <img src="./assets/header.png" alt="Voiture d'auto-ecole sur la route" loading="eager" />
+            </div>
+            <div class="hero__stats">
+              <div class="stat__pill"><i class="ri-trophy-line"></i> 98% de réussite</div>
+              <div class="stat__pill"><i class="ri-time-line"></i> 1 mois 10 jours</div>
+              <div class="stat__pill"><i class="ri-map-pin-line"></i><a href="https://maps.google.com/?q=Koumassi+Abidjan+Cote+d'Ivoire" target="_blank" class="maps"> Koumassi</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll__down">
+        <i class="ri-arrow-down-line"></i>
+      </a>
+    </header>
+
+    <!-- Nos Formations -->
+    <section class="section__container range__container" id="about">
+      <h2 class="section__header">NOS FORMATIONS</h2>
+      <div class="range__grid">
+        <div class="range__card formation-card-b">
+          <div class="range__card__bg"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Formation voiture categorie B" loading="lazy" /></div>
+          <div class="range__details">
+            <!-- <div class="range__icon"><i class="ri-car-line"></i></div> -->
+            <h4>CATÉGORIE B</h4>
+            <p>Voiture particulière,   La formation la plus demandée à Abidjan.</p>
+            <a href="formations.html"><i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+        <div class="range__card formation-card-a">
+          <div class="range__card__bg"><img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80" alt="Formation moto categorie A" loading="lazy" /></div>
+          <div class="range__details">
+            <!-- <div class="range__icon"><i class="ri-motorbike-line"></i></div> -->
+            <h4>CATÉGORIE A</h4>
+            <p>Moto — Idéal pour se déplacer facilement dans Abidjan.</p>
+            <a href="formations.html"><i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+        <div class="range__card formation-card-code">
+          <div class="range__card__bg"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80" alt="Cours de code de la route" loading="lazy" /></div>
+          <div class="range__details">
+            <!-- <div class="range__icon"><i class="ri-book-open-line"></i></div> -->
+            <h4>CODE DE LA ROUTE</h4>
+            <p>Formation théorique intensive avec moniteurs certifiés.</p>
+            <a href="formations.html"><i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+        <div class="range__card formation-card-c">
+          <div class="range__card__bg"><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=80" alt="Formation poids lourd categorie C" loading="lazy" /></div>
+          <div class="range__details">
+            <!-- <div class="range__icon"><i class="ri-truck-line"></i></div> -->
+            <h4>CATÉGORIE C</h4>
+            <p>Poids lourds — Camions et transport professionnel.</p>
+            <a href="formations.html"><i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pourquoi HUMILITE -->
+    <section class="section__container location__container" id="pourquoi">
+      <div class="location__images">
+        <img src="./assets/feu-tricolor.png" alt="FEU TRIOLORE" loading="lazy" />
+      </div>
+      <div class="location__content">
+        <h2 class="section__header">POURQUOI CHOISIR HUMILITE ?</h2>
+        <p>
+          L'Auto-École HUMILITE est la référence à Koumassi. Avec une note parfaite de <strong>5/5</strong> attribuée par nos élèves, nous avons bâti notre réputation sur des résultats concrets. Notre promesse : vous obtenir le permis de conduire <strong>en 1 mois et 10 jours</strong>, grâce à une pédagogie intensive et des moniteurs certifiés.
+        </p>
+        <ul class="why__list">
+          <li><i class="ri-check-line"></i> Moniteurs diplômés et bienveillants</li>
+          <li><i class="ri-check-line"></i> Véhicules récents et bien entretenus</li>
+          <li><i class="ri-check-line"></i> Planning flexible adapté à votre agenda</li>
+          <li><i class="ri-check-line"></i> Suivi personnalisé de chaque élève</li>
+        </ul>
+        <div class="location__btn">
+          <a href="inscription.html"><button class="btn">Commencer ma formation</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nos Forfaits -->
+    <section class="select__container" id="forfaits">
+      <h2 class="section__header">NOS FORFAITS</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="select__card">
+              <div class="forfait__visual forfait__essentiel">
+                <!-- <i class="ri-car-line"></i> -->
+                <h3>ESSENTIEL</h3>
+                <p>Catégorie B ” Code + 20h de conduite</p>
+              </div>
+              <div class="select__info">
+                <div class="select__info__card">
+                  <span><i class="ri-book-2-line"></i></span>
+                  <h4>Code <span>inclus</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-steering-2-line"></i></span>
+                  <h4>20h <span>conduite</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-time-line"></i></span>
+                  <h4>40 <span>jours</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-user-line"></i></span>
+                  <h4>1 <span>moniteur</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="select__card">
+              <div class="forfait__visual forfait__premium">
+                <!-- <i class="ri-trophy-line"></i> -->
+                <h3>PREMIUM</h3>
+                <p>Catégorie B  Code + 30h + Examen inclus</p>
+              </div>
+              <div class="select__info">
+                <div class="select__info__card">
+                  <span><i class="ri-book-2-line"></i></span>
+                  <h4>Code <span>inclus</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-steering-2-line"></i></span>
+                  <h4>30h <span>conduite</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-time-line"></i></span>
+                  <h4>40 <span>jours</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-medal-line"></i></span>
+                  <h4>Examen <span>inclus</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="select__card">
+              <div class="forfait__visual forfait__moto">
+                <!-- <i class="ri-motorbike-line"></i> -->
+                <h3>MOTO</h3>
+                <p>Catégorie A  Code + 15h de conduite</p>
+              </div>
+              <div class="select__info">
+                <div class="select__info__card">
+                  <span><i class="ri-book-2-line"></i></span>
+                  <h4>Code <span>inclus</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-steering-2-line"></i></span>
+                  <h4>15h <span>conduite</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-time-line"></i></span>
+                  <h4>30 <span>jours</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-user-line"></i></span>
+                  <h4>1 <span>moniteur</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="select__card">
+              <div class="forfait__visual forfait__code">
+                <!-- <i class="ri-book-open-line"></i> -->
+                <h3>CODE SEUL</h3>
+                <p>Théorie intensive , Préparation examen code</p>
+              </div>
+              <div class="select__info">
+                <div class="select__info__card">
+                  <span><i class="ri-computer-line"></i></span>
+                  <h4>Online <span>+ présentiel</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-time-line"></i></span>
+                  <h4>15 <span>jours</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-question-answer-line"></i></span>
+                  <h4>QCM <span>illimités</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-refresh-line"></i></span>
+                  <h4>2 <span>tentatives</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="select__card">
+              <div class="forfait__visual forfait__pro">
+                <i class="ri-truck-line"></i>
+                <h3>PROFESSIONNEL</h3>
+                <p>Catégorie C  Transport professionnel</p>
+              </div>
+              <div class="select__info">
+                <div class="select__info__card">
+                  <span><i class="ri-book-2-line"></i></span>
+                  <h4>Code <span>inclus</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-steering-2-line"></i></span>
+                  <h4>35h <span>conduite</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-time-line"></i></span>
+                  <h4>60 <span>jours</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-medal-line"></i></span>
+                  <h4>Examen <span>inclus</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="select__form">
+        <div class="select__price">
+          <span><i class="ri-price-tag-3-line"></i></span>
+          <div><span id="select-price">75 000</span> FCFA</div>
+        </div>
+        <div class="select__btns">
+          <a href="formations.html"><button class="btn">Voir détails</button></a>
+          <a href="inscription.html"><button class="btn">S'inscrire</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TÃ©moignages -->
+    <section class="section__container story__container">
+      <h2 class="section__header">TÉMOIGNAGES D'ÉLÈVES</h2>
+      <div class="story__grid">
+        <div class="story__card">
+          <div class="story__date">
+            <span>5/5</span>
+            <div>
+              <p>Koné Aminata</p>
+              <p>Mars 2025</p>
+            </div>
+          </div>
+          <h4>Permis obtenu en 38 jours !</h4>
+          <p>
+           J'avais peur de ne pas réussir du premier coup, mais les moniteurs d'HUMILITE m'ont mis en confiance dès le premier jour. Formation sérieuse, résultats garantis..
+          </p>
+          <div class="stars">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+        </div>
+        <div class="story__card">
+          <div class="story__date">
+            <span>5/5</span>
+            <div>
+              <p>Traoré Ibrahima</p>
+              <p>Janvier 2025</p>
+            </div>
+          </div>
+          <h4>La meilleure auto-école de Koumassi</h4>
+          <p>
+            Vraiment sérieux et professionnels. Le moniteur explique tout clairement. J'ai réussi mon code du premier coup et ma conduite aussi. Merci HUMILITE !
+          </p>
+          <div class="stars">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+        </div>
+        <div class="story__card">
+          <div class="story__date">
+            <span>5/5</span>
+            <div>
+              <p>Coulibaly Mariam</p>
+              <p>Avril 2025</p>
+            </div>
+          </div>
+          <h4>Rapide et efficace</h4>
+          <p>
+            Je recommande à tous mes amis. Le planning est flexible, j'ai pu suivre ma formation sans perturber mon travail. Permis obtenu en exactement 40 jours.
+          </p>
+          <div class="stars">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner partenaires / chiffres clÃ©s -->
+    <section class="banner__container">
+      <div class="banner__wrapper">
+        <img src="assets/banner-1.png" alt="banner" />
+        <img src="assets/banner-2.png" alt="banner" />
+        <img src="assets/banner-3.png" alt="banner" />
+        <img src="assets/banner-4.png" alt="banner" />
+        <img src="assets/banner-5.png" alt="banner" />
+        <img src="assets/banner-6.png" alt="banner" />
+        <img src="assets/banner-7.png" alt="banner" />
+        <img src="assets/banner-8.png" alt="banner" />
+        <img src="assets/banner-9.png" alt="banner" />
+        <img src="assets/banner-10.png" alt="banner" />
+      </div>
+    </section>
+
+    <!-- CTA Application -->
+    <section class="download">
+      <div class="section__container download__container">
+        <div class="download__content">
+          <h2 class="section__header">VOTRE PERMIS EN 40 JOURS, C'EST POSSIBLE</h2>
+          <p>Rejoignez des centaines d'élèves qui ont déjà obtenu leur permis avec HUMILITE Auto-École. Inscrivez-vous dès aujourd'hui ou contactez-nous sur WhatsApp.</p>
+          <div class="download__links">
+            <a href="inscription.html" class="cta__btn cta__primary">
+              <i class="ri-edit-line"></i> S'inscrire maintenant
+            </a>
+            <a href="https://wa.me/2250713188565" class="cta__btn cta__whatsapp" target="_blank">
+              <i class="ri-whatsapp-line"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="download__image">
+          <img src="./assets/panneau.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter / Contact rapide -->
+    <section class="news" id="contact">
+      <div class="section__container news__container">
+        <h2 class="section__header">Restez informé de nos sessions et offres.</h2>
+        <form action="#" method="post">
+          <input type="email" placeholder="Votre email" required />
+          <button class="btn" type="submit">
+            <i class="ri-send-plane-fill"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h4>Auto-École HUMILITE</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formations.html">Nos formations</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Formations</h4>
+          <ul class="footer__links">
+            <li><a href="formations.html">Catégorie B (Voiture)</a></li>
+            <li><a href="formations.html">Catégorie A (Moto)</a></li>
+            <li><a href="formations.html">Catégorie C (Camion)</a></li>
+            <li><a href="formations.html">Code de la route</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Informations</h4>
+          <ul class="footer__links">
+            <li><a href="#">Prodomo 1, Koumassi</a></li>
+            <li><a href="https://wa.me/2250713188565">+225 07 13 18 85 65</a></li>
+            <li><a href="#">Lun–Sam: 7h – 18h</a></li>
+            <li><a href="#">humilite.autoecole@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Suivez-nous</h4>
+          <ul class="footer__socials">
+            <li><a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="https://wa.me/2250713188565" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a></li>
+          </ul>
+          <div class="footer__map__link">
+            <a href="contact.html"><i class="ri-map-pin-line"></i> Voir sur la carte</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright &copy; 2025 Auto-École HUMILITE — Koumassi, Abidjan. Site réalisé par <a href="https://damiti-ouattara.vercel.app/" target="_blank" style="color: var(--primary-color);">Damiti Ouattara</a>.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
+
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contactez l'Auto-École HUMILITE à Koumassi, Abidjan. Prodomo 1, Koumassi. WhatsApp: +225 07 13 18 85 65" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact | Auto-École HUMILITE</title>
+  </head>
+  <body>
+
+    <a href="https://wa.me/2250713188565" class="whatsapp__float" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+      <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <header class="page__header">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html">HUMILITE</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="inscription.html">S'inscrire</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav__btn">
+          <a href="inscription.html"><button class="btn">S'inscrire</button></a>
+        </div>
+      </nav>
+
+      <div class="page__hero">
+        <h1>NOUS CONTACTER</h1>
+        <p>Nous sommes disponibles du lundi au samedi, de 7h à 18h.</p>
+        <div class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Contact</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Infos contact -->
+    <section class="section__container contact__container">
+      <div class="contact__layout">
+
+        <!-- Bloc infos -->
+        <div class="contact__info">
+          <h2 class="section__header" style="font-size: 2rem; letter-spacing: -3px; margin-bottom: 2rem;">INFORMATIONS DE CONTACT</h2>
+
+          <div class="contact__cards">
+            <div class="contact__card">
+              <div class="contact__icon"><i class="ri-map-pin-line"></i></div>
+              <div>
+                <h4>Adresse</h4>
+                <p>Prodomo 1, Koumassi<br />Abidjan, Côte d'Ivoire</p>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__icon"><i class="ri-phone-line"></i></div>
+              <div>
+                <h4>Téléphone / WhatsApp</h4>
+                <p><a href="https://wa.me/2250713188565" style="color: var(--primary-color);">+225 07 13 18 85 65</a></p>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__icon"><i class="ri-mail-line"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>humilite.autoecole@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__icon"><i class="ri-time-line"></i></div>
+              <div>
+                <h4>Horaires d'ouverture</h4>
+                <p>Lundi – Samedi : 7h00 – 18h00<br />Dimanche : Fermé</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__whatsapp__cta">
+            <a href="https://wa.me/2250713188565?text=Bonjour%20HUMILITE%20Auto-École%2C%20je%20souhaite%20avoir%20des%20informations." target="_blank">
+              <i class="ri-whatsapp-line"></i>
+              <div>
+                <strong>Contactez-nous sur WhatsApp</strong>
+                <span>Réponse rapide garantie</span>
+              </div>
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <!-- Réseaux sociaux -->
+          <div class="contact__socials">
+            <h4>Suivez-nous</h4>
+            <div class="social__links">
+              <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+              <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+              <a href="https://wa.me/2250713188565" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="contact__form__wrap">
+          <h2 class="section__header" style="font-size: 2rem; letter-spacing: -3px; margin-bottom: 2rem;">ENVOYER UN MESSAGE</h2>
+
+          <form class="inscription__form" id="contactForm" onsubmit="handleContactSubmit(event)">
+            <div class="form__row">
+              <div class="form__group">
+                <label for="c_nom">Nom complet <span class="required">*</span></label>
+                <input type="text" id="c_nom" name="nom" placeholder="Votre nom" required />
+              </div>
+              <div class="form__group">
+                <label for="c_tel">Téléphone <span class="required">*</span></label>
+                <input type="tel" id="c_tel" name="telephone" placeholder="+225 07 00 00 00 00" required />
+              </div>
+            </div>
+
+            <div class="form__group form__group--full">
+              <label for="c_email">Email</label>
+              <input type="email" id="c_email" name="email" placeholder="votre@email.com" />
+            </div>
+
+            <div class="form__group form__group--full">
+              <label for="c_sujet">Sujet <span class="required">*</span></label>
+              <select id="c_sujet" name="sujet" required>
+                <option value="">-- Sélectionnez un sujet --</option>
+                <option value="info">Demande d'information générale</option>
+                <option value="tarif">Renseignement sur les tarifs</option>
+                <option value="planning">Planning et disponibilités</option>
+                <option value="partenariat">Partenariat professionnel</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form__group form__group--full">
+              <label for="c_message">Message <span class="required">*</span></label>
+              <textarea id="c_message" name="message" placeholder="Écrivez votre message ici..." rows="5" required></textarea>
+            </div>
+
+            <div class="form__actions">
+              <button type="submit" class="btn btn--full">
+                <i class="ri-send-plane-line"></i> Envoyer le message
+              </button>
+            </div>
+
+            <div class="form__success" id="contactSuccess" style="display:none;">
+              <i class="ri-checkbox-circle-line"></i>
+              <strong>Message envoyé !</strong>
+              <p>Nous vous répondrons dans les plus brefs délais. Vous pouvez aussi nous joindre sur WhatsApp pour une réponse immédiate.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carte Google Maps -->
+    <section class="map__section">
+      <div class="map__header">
+        <h2 class="section__header" style="text-align: center;">OÙ NOUS TROUVER</h2>
+        <p style="text-align:center; color: var(--text-light); margin-top: 0.5rem;">Prodomo 1, Koumassi — Abidjan, Côte d'Ivoire</p>
+      </div>
+      <div class="map__container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.489!2d-3.9999!3d5.3073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMTgnMjYuMyJOIDPCsDU5JzU5LjYiVw!5e0!3m2!1sfr!2sci!4v1600000000000!5m2!1sfr!2sci"
+          width="100%"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localisation Auto-École HUMILITE, Koumassi Abidjan">
+        </iframe>
+        <div class="map__overlay">
+          <div class="map__pin">
+            <i class="ri-map-pin-fill"></i>
+            <div>
+              <strong>Auto-École HUMILITE</strong>
+              <span>Prodomo 1, Koumassi</span>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=Koumassi+Abidjan+Cote+d'Ivoire" target="_blank" class="map__link">
+            <i class="ri-external-link-line"></i> Ouvrir dans Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h4>Auto-École HUMILITE</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formations.html">Nos formations</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Formations</h4>
+          <ul class="footer__links">
+            <li><a href="formations.html">Catégorie B</a></li>
+            <li><a href="formations.html">Catégorie A</a></li>
+            <li><a href="formations.html">Catégorie C</a></li>
+            <li><a href="formations.html">Code seul</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Informations</h4>
+          <ul class="footer__links">
+            <li><a href="#">Prodomo 1, Koumassi</a></li>
+            <li><a href="https://wa.me/2250713188565">+225 07 13 18 85 65</a></li>
+            <li><a href="#">Lun–Sam: 7h – 18h</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Suivez-nous</h4>
+          <ul class="footer__socials">
+            <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="https://wa.me/2250713188565"><i class="ri-whatsapp-line"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright &copy; 2025 Auto-École HUMILITE — Koumassi, Abidjan.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script>
+      function handleContactSubmit(e) {
+        e.preventDefault();
+        const form = document.getElementById('contactForm');
+        const success = document.getElementById('contactSuccess');
+        form.querySelectorAll('input, select, textarea, button').forEach(el => el.disabled = true);
+        success.style.display = 'flex';
+        success.scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
+  </body>
+</html>
